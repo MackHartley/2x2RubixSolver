@@ -1,7 +1,5 @@
 # 2x2RubixSolver
 
-*(Note: The code in this repo is super messy and unformatted. I just uploaded it in case anyone else is interested in taking a peak at it.)*
-
 My mother asked me if I could solve a 2x2 rubik's cube. Normally I don't care much for rubix cubes but she said she hasn't been able to solve it. I *thought* it would be fairly simple to write a breadth-first search algorithm to solve the cube but surprisingly it was more complicated than I expected. With this naivete in mind I set off to solve the rubik's cube, effectively procrastinating development on [my open source library](https://github.com/MackHartley/RoundedProgressBar) which I really should have been working on instead.
 
 I decided to represent the 2x2x2 cube as a 4x4x4 matrix because that way I don’t have to deal with the fact that each of the cubes on the 2x2x2 rubik's cube has 3 different colored stickers. By working with a 4x4x4 cube, each index can be designated it’s own color.
