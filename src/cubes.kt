@@ -381,3 +381,39 @@ val dadsCube = arrayListOf(
         arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY)
     )
 )
+
+// The next two cubes are equivalent but one is made manually and one is made programmatically
+val manualCube = Cube(arrayListOf(
+    arrayListOf(
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY),
+        arrayListOf(EMPTY, Red, Red, EMPTY),
+        arrayListOf(EMPTY, Green, White, EMPTY),
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, Yellow, Yellow, EMPTY),
+        arrayListOf(Blue, EMPTY, EMPTY, Green),
+        arrayListOf(Red, EMPTY, EMPTY, Purple),
+        arrayListOf(EMPTY, White, Blue, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, Purple, Blue, EMPTY),
+        arrayListOf(Green, EMPTY, EMPTY, White),
+        arrayListOf(White, EMPTY, EMPTY, Purple),
+        arrayListOf(EMPTY, Green, Blue, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY),
+        arrayListOf(EMPTY, Yellow, Red, EMPTY),
+        arrayListOf(EMPTY, Purple, Yellow, EMPTY),
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY)
+    )
+))
+val programCube = Cube(solvedState)
+    .rotateFrontCCW()
+    .rotateFrontCCW()
+    .rotateTopLeft()
+    .rotateRightDown()
+    .rotateTopRight()
+    .rotateRightDown()
+    .rotateFrontCW()

@@ -153,7 +153,7 @@ class Cube(val state: List<List<List<RubixColor>>>) {
     }
 
     fun cubesEqivalent(other: Cube) {
-
+        // todo?
     }
 
 
