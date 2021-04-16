@@ -1,5 +1,30 @@
-# 2x2RubixSolver
+<h1 align="center">2x2RubixSolver</h1>
+<br>
+<p align="center">
+ Scramble the cube...
+ <br>
+ <img src="https://user-images.githubusercontent.com/10659285/114966853-08a09c00-9e39-11eb-8ebf-56898aff3a11.gif" width="500"/>
+ <br>
+ <br>
+ <br>
+ ...Enter color values into the algorithm...
+ <br>
+ <img src="https://user-images.githubusercontent.com/10659285/114966931-2cfc7880-9e39-11eb-8a1d-5978d1aa2d0d.gif" width="500"/>
+ <br>
+ <br>
+ <br>
+ ...Run the bidirectional BFS algorithm...
+ <br>
+ <img src="https://user-images.githubusercontent.com/10659285/114966923-266e0100-9e39-11eb-976f-2a6155c40b21.gif"/>
+ <br>
+ <br>
+ <br>
+ ...And it's solved!
+ <br>
+ <img src="https://user-images.githubusercontent.com/10659285/114966891-15bd8b00-9e39-11eb-8d21-2f9df447b6e3.gif" width="500"/>
+</p>
 
+# Why and How I Made This
 My mother asked me if I could solve a 2x2 rubik's cube. Normally I don't care much for rubix cubes but she said she hasn't been able to solve it. I *thought* it would be fairly simple to write a breadth-first search algorithm to solve the cube but surprisingly it was more complicated than I expected. With this naivete in mind I set off to solve the rubik's cube, effectively procrastinating development on [my open source library](https://github.com/MackHartley/RoundedProgressBar) which I really should have been working on instead.
 
 I decided to represent the 2x2x2 cube as a 4x4x4 matrix because that way I don’t have to deal with the fact that each of the cubes on the 2x2x2 rubik's cube has 3 different colored stickers. By working with a 4x4x4 cube, each index can be designated it’s own color.
