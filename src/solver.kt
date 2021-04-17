@@ -13,6 +13,8 @@ fun main(args : Array<String>) {
  * white facing the left and green facing down.
  */
 fun bidirectionalBfsSolver() {
+    val startTime = System.currentTimeMillis()
+
     println("Starting...".trimIndent())
     val maxItr = 500000 // Anything past this won't be solved probably
     var curItr = 0
@@ -22,7 +24,7 @@ fun bidirectionalBfsSolver() {
     val searchVisited: HashMap<String, Steps> = HashMap()
     val solutionVisited: HashMap<String, Steps> = HashMap()
 
-    val startCube = Cube(anchorCorner) // Starting cube state
+    val startCube = Cube(dillsCube) // Starting cube state
     val targetCube = Cube(solvedState) // Desired cube state
 
     while (curItr++ < maxItr) {
@@ -64,7 +66,9 @@ fun bidirectionalBfsSolver() {
             solutionQueue.add(curTargetSteps.plus(RotateRightDown))
         }
     }
-    if (curItr <= maxItr) println("Reached max allowed steps")
+    if (curItr >= maxItr) println("Reached max allowed steps")
+    val endTime = System.currentTimeMillis()
+    println("Search took ${endTime - startTime} milliseconds")
 }
 
 /**

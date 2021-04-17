@@ -382,6 +382,34 @@ val dadsCube = arrayListOf(
     )
 )
 
+
+val dillsCube = arrayListOf(
+    arrayListOf(
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY),
+        arrayListOf(EMPTY, Yellow, Purple, EMPTY),
+        arrayListOf(EMPTY, Green, Blue, EMPTY),
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, Blue, Blue, EMPTY),
+        arrayListOf(Red, EMPTY, EMPTY, White),
+        arrayListOf(Yellow, EMPTY, EMPTY, Purple),
+        arrayListOf(EMPTY, Red, Yellow, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, Purple, White, EMPTY),
+        arrayListOf(Green, EMPTY, EMPTY, Red),
+        arrayListOf(White, EMPTY, EMPTY, Green),
+        arrayListOf(EMPTY, Green, Red, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY),
+        arrayListOf(EMPTY, Yellow, Blue, EMPTY),
+        arrayListOf(EMPTY, Purple, White, EMPTY),
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY)
+    )
+)
+
 // The next two cubes are equivalent but one is made manually and one is made programmatically
 val manualCube = Cube(arrayListOf(
     arrayListOf(
@@ -417,3 +445,30 @@ val programCube = Cube(solvedState)
     .rotateTopRight()
     .rotateRightDown()
     .rotateFrontCW()
+
+val videoCube = arrayListOf(
+    arrayListOf(
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY),
+        arrayListOf(EMPTY, Red, Purple, EMPTY),
+        arrayListOf(EMPTY, White, Yellow, EMPTY),
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, White, Green, EMPTY),
+        arrayListOf(Green, EMPTY, EMPTY, Yellow),
+        arrayListOf(Red, EMPTY, EMPTY, Blue),
+        arrayListOf(EMPTY, Blue, Purple, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, Yellow, Blue, EMPTY),
+        arrayListOf(Green, EMPTY, EMPTY, Purple),
+        arrayListOf(White, EMPTY, EMPTY, Blue),
+        arrayListOf(EMPTY, Green, Red, EMPTY)
+    ),
+    arrayListOf(
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY),
+        arrayListOf(EMPTY, Red, White, EMPTY),
+        arrayListOf(EMPTY, Purple, Yellow, EMPTY),
+        arrayListOf(EMPTY, EMPTY, EMPTY, EMPTY)
+    )
+)
