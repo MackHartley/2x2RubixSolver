@@ -19,8 +19,8 @@ fun bidirectionalBfsSolver() {
     val maxItr = 500000 // Anything past this won't be solved probably
     var curItr = 0
     
-    val searchQueue: Queue<List<Step>> = LinkedList<List<Step>>().apply { add(emptyList()) }
-    val solutionQueue: Queue<List<Step>> = LinkedList<List<Step>>().apply { add(emptyList()) }
+    val searchQueue: ArrayDeque<List<Step>> = ArrayDeque<List<Step>>().apply { add(emptyList()) }
+    val solutionQueue: ArrayDeque<List<Step>> = ArrayDeque<List<Step>>().apply { add(emptyList()) }
     val searchVisited: HashMap<String, Steps> = HashMap()
     val solutionVisited: HashMap<String, Steps> = HashMap()
 
