@@ -40,7 +40,7 @@ I realized I only needed these moves to represent any combination of movement be
 
 Without realizing this I would have needed to implement 12 methods for movement which I wasn’t interested in doing.
 
-Even though I only needed to write 3 functions for movement, they were very annoying to write as it was a bunch of tedious index lookups. Looking back, I obviously should have done some matrix math type stuff but hey if we are going to play that game then the Romans shouldn’t have drank from lead cups. Hindsight is 2020 and such.
+Even though I only needed to write 3 functions for movement, they were very annoying to write as it was a bunch of tedious index lookups. Looking back, I obviously should have done some matrix math type stuff but hey if we are going to play that game then we all should have invested in Dogecoin in 2015. Hindsight is 20/20 and such.
 
 The most frustrating issue I realized is that the current state of the algorithm doesn’t recognize one solved cube from another solved cube. This means that whenever I run this algorithm I need to find the corner with white, green and purple and situate it properly so I can read in the data to the algorithm. I could probably solve this by making a better data structure or having some better equality checks in my algorithm, but that’s for a future project.
 
